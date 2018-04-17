@@ -1,0 +1,14 @@
+<div id="sidebar">
+
+	<!-- Sidebar -->
+	{% for post in site.posts offset: 0 limit: 1 %}
+		<section>
+			<h3>{{ post.title }}</h3>
+			{{ post.excerpt }}
+			<footer>
+				<a href="http://e-HEAL.github.io/e-HEAL/assets/e-HEAL.pdf" class="button">Read whitepaper</a>
+			</footer>
+		</section>
+	{% endfor %}
+	
+</div>
